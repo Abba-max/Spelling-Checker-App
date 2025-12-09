@@ -67,3 +67,7 @@ def to_dict(self):
 #Function to display product's id and name
 def __repr__(self):
      return f"Product({self.__product_id}, {self.__name})"
+ 
+
+
+
