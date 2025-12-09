@@ -39,14 +39,14 @@ class InventoryManager:
             
     def save_products(self):
         try:
-            with open(self.json_file,'r'):
+            with open(self.json_file,'r') as f:
                 data = json.load(f)
                 data["products"] = [p.to_dict() for p in self.products] # Converting product to dictionary and saving in data
                 data["metadata"]["total_products"] = len(self.products) # Total size of products
                 data["metadata"]["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S") # Date saved
         
             with open(self.json_file, 'w') as f:
-                json.dump(dta,f,indent=2) # Writing all product data in a json file
+                json.dump(data,f,indent=2) # Writing all product data in a json file
             
             print("✓ Inventory saved successfully")
             return True
@@ -57,7 +57,7 @@ class InventoryManager:
     def search_with_autocomplete(self,prefix:str):
         if not prefix.strip(): # Removes leading and trailing whitespaces from prefix 
             return []
-        if not self.bloom_filter.contains(prefix):
+        if not self.bloom_filter.contain(prefix):
             return []
         
         return self.trie.search_prefix(prefix)
@@ -84,7 +84,7 @@ class InventoryManager:
                 return True
         return False
     
-    def display_inventory(self,sort_by="expiry"): # By default, products are sorted by epiry_date
+    def display_inventory(self,sort_by="expiry"): # By default, products are sorted by expiry_date
         if sort_by == "expiry":
             products = self.get_products_sorted_by_expiry()
         elif sort_by == "name":

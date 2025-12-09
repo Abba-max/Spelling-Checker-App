@@ -2,9 +2,9 @@ import hashlib
 class BloomFilter:
     def __init__(self,size:int=1000,hash_count:int=3):
         # The higher the size, the lesser the false positives
-        # The smaller the hash_count, the higher the accuracy
+        # The more the hash_count, the higher the accuracy
         self.size = size
-        self.hahsh_count = hash_count
+        self.hash_count = hash_count
         self.bit_array = [0]*size
         
     def _hash(self,item:str,seed:int):

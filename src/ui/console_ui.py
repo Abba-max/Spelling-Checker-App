@@ -65,11 +65,11 @@ class ConsoleUI:
     def make_sale(self): # Adding products to cart and printing a receipt
         if not self.current_worker:
             print("✗ Please login first")
-        return
+            return
         customer_name = input("\nCustomer Name: ").strip()
         if not customer_name:
             print("✗ Customer name required")
-        return
+            return
         self.cart = []
         self.search_product_interactive()
         if not self.cart:
@@ -91,6 +91,15 @@ class ConsoleUI:
             self.inventory.save_products()
         except Exception as e:
             print(f"✗ Error processing sale: {e}")
+            
+    def view_inventory(Self):
+        print("\nSort by:")
+        print("1. Expiry Date")
+        print("2. Name")
+        print("3. Stock Level")
+        choice = input("Choice (1-3): ").strip()
+        sort_by = {"1": "expiry", "2": "name", "3": "stock"}.get(choice, "expiry")
+        self.inventory.display_inventory(sort_by)
 
     def update_product(self):
         product_id = input("\nProduct ID to update:").strip()
