@@ -1,6 +1,8 @@
 from datetime import datetime
 from typing import List
 import json
+import os
+
 class Receipt:
     def __init__(self, customer_name: str, worker_name: str):
         self.customer_name = customer_name
@@ -48,6 +50,24 @@ class Receipt:
         
         return "\n".join(lines)
     
-    
+    def print_receipt(self):
+        print("\n"+self.generate_text_receipt()+"\n")
+        
+    def save_to_file(self,directory = "receipts"): # Method to save receipt to json file
+        os.makedirs(directory,exist_ok = True)
+        
+        filename = f"{directory}/receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json" 
+        receipt_data = {
+            "date": self.date,
+            "customer": self.customer_name,
+            "worker": self.worker_name,
+            "items": self.items,
+            "total": self.total
+        }
+        
+        with open(filename,"w") as f:
+            json.dump(receipt_data,f,indent=2)
+            
+        return filename    
           
         
