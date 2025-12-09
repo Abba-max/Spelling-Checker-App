@@ -1,54 +1,69 @@
 class Product:
-    
-    def _init_(self,product_id:int,name:str, unit_price:float, quantity:int,expiry_date:str,supplier:str):
-        self.name = name
-        self.unit_price = unit_price
-        self.quantity = quantity
-        self.expiry_date = expiry_date
-        self.supplier = supplier
-
+    def __init__(self, product_id: str, name: str, unit_price: float, 
+                 quantity: int, expiry_date: str, supplier: str, category: str = ""):
+        self.__product_id = product_id
+        self.__name = name
+        self.__unit_price = unit_price
+        self.__quantity = quantity
+        self.__expiry_date = expiry_date
+        self.__supplier = supplier
+        self.__category = category
 @property
-def getID(self):
+def product_id(self):
     return self.__product_id
 
-@name.setter
-def setID(self,product_id):
-    if(type(name)==str):
-        self.__product_id = product_id
-    else:
-        print("Enter a valid ID")
-
 @property
-def getName(self):
+def name(self):
     return self.__name
 
 @name.setter
-def setName(self,name):
-    if(type(name)==str):
-        self.__name = name
-    else:
-        print("Enter a str as product name")
-
+def name(self, value):
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Name must be a non-empty string")
+        self.__name = value
 @property
-def getQuantity(Self):
+def quantity(self):
     return self.__quantity
 
 @quantity.setter
-def setQuantity(self,quantity):
-    if(type(quantity)==int):
-        self.__quantity = quantity
-    else:
-        f"{self.__name} out of stock"
-
+def quantity(self, value):
+        if not isinstance(value, int) or value < 0:
+            raise ValueError("Quantity must be a non-negative integer")
+        self.__quantity = value
 @property
-def getExpiry_date(Self):
+def unit_price(self):
+    return self.__unit_price
+
+@unit_price.setter
+def unit_price(self, value):
+    if not isinstance(value, (int, float)) or value < 0:
+        raise ValueError("Price must be a non-negative number")
+    self.__unit_price = value
+    
+@property
+def expiry_date(self):
     return self.__expiry_date
-
+    
 @property
-def getSupplier(Self):
+def supplier(self):
     return self.__supplier
-
-
-product1 = Product() 
     
-    
+@property
+def category(self):
+    return self.__category
+
+#Function to convert product to dictionary for JSON serialization
+def to_dict(self):
+   return {
+            "product_id": self.__product_id,
+            "name": self.__name,
+            "category": self.__category,
+            "quantity_in_stock": self.__quantity,
+            "unit_price": self.__unit_price,
+            "expiry_date": self.__expiry_date,
+            "supplier": self.__supplier
+        }
+   
+#Function to display product's id and name
+def __repr__(self):
+     return f"Product({self.__product_id}, {self.__name})"
