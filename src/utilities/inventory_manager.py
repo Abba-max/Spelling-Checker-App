@@ -52,7 +52,7 @@ class InventoryManager:
             return True
         except Exception as e:
           print(f"✗ Error saving products: {e}")
-    return False
+          return False
 
     def search_with_autocomplete(self,prefix:str):
         if not prefix.strip(): # Removes leading and trailing whitespaces from prefix 

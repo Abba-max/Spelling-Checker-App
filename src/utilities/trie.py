@@ -4,7 +4,7 @@ class TrieNode:
         self.is_end_of_word = False
         self.product = None
         
-    class Trie:
+class Trie:
         def __init__(self):
             self.root = TrieNode()
         
