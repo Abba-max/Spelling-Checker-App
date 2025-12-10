@@ -2,20 +2,20 @@
   "metadata": {
     "file_version": "1.0",
     "generated_on": "2024-11-20",
-    "total_products": 20,
-    "description": "Sample product database for Spelling Checker Project with 200 single-word product names",
-    "last_updated": "2025-12-10 06:16:40"
+    "total_products": 200,
+    "description": "Sample product database for Spelling Checker Project with 200 single-word product names"
   },
   "products": [
     {
       "product_id": "P001",
       "name": "Laptop",
       "category": "Electronics",
-      "quantity_in_stock": 43,
+      "quantity_in_stock": 45,
       "unit_price": 99900,
       "expiry_date": "2025-12-31",
       "supplier": "TechCorp"
     },
+    
     {
       "product_id": "P002",
       "name": "Phone",
@@ -101,7 +101,7 @@
       "product_id": "P011",
       "name": "Chair",
       "category": "Furniture",
-      "quantity_in_stock": 66,
+      "quantity_in_stock": 67,
       "unit_price": 19900,
       "expiry_date": "2026-08-30",
       "supplier": "OfficeSupplies"
@@ -164,7 +164,7 @@
       "product_id": "P018",
       "name": "Cabinet",
       "category": "Furniture",
-      "quantity_in_stock": 34,
+      "quantity_in_stock": 37,
       "unit_price": 39900,
       "expiry_date": "2026-08-10",
       "supplier": "HomeFurnishings"
@@ -182,10 +182,9 @@
       "product_id": "P020",
       "name": "Carpet",
       "category": "Furniture",
-      "quantity_in_stock": 48,
+      "quantity_in_stock": 49,
       "unit_price": 19900,
       "expiry_date": "2026-03-30",
       "supplier": "HomeFurnishings"
-    }
-  ]
+    }]
 }

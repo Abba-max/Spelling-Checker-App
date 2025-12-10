@@ -1,0 +1,15 @@
+{
+  "date": "2025-12-10 05:56:49",
+  "customer": "customer",
+  "worker": "worker1",
+  "items": [
+    {
+      "product_id": "P011",
+      "name": "Chair",
+      "quantity": 1,
+      "unit_price": 19900,
+      "total": 19900
+    }
+  ],
+  "total": 19900.0
+}

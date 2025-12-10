@@ -1,0 +1,29 @@
+{
+  "date": "2025-12-10 05:44:29",
+  "customer": "customer1",
+  "worker": "worker1",
+  "items": [
+    {
+      "product_id": "P001",
+      "name": "Laptop",
+      "quantity": 2,
+      "unit_price": 99900,
+      "total": 199800
+    },
+    {
+      "product_id": "P020",
+      "name": "Carpet",
+      "quantity": 1,
+      "unit_price": 19900,
+      "total": 19900
+    },
+    {
+      "product_id": "P018",
+      "name": "Cabinet",
+      "quantity": 3,
+      "unit_price": 39900,
+      "total": 119700
+    }
+  ],
+  "total": 339400.0
+}

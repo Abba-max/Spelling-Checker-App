@@ -8,53 +8,56 @@ class Product:
         self.__expiry_date = expiry_date
         self.__supplier = supplier
         self.__category = category
-@property
-def product_id(self):
-    return self.__product_id
+    
+    @property
+    def product_id(self):
+        return self.__product_id
 
-@property
-def name(self):
-    return self.__name
+    @property
+    def name(self):
+        return self.__name
 
-@name.setter
-def name(self, value):
+    @name.setter
+    def name(self, value):
         if not isinstance(value, str) or not value.strip():
             raise ValueError("Name must be a non-empty string")
         self.__name = value
-@property
-def quantity(self):
-    return self.__quantity
+    
+    @property
+    def quantity(self):
+        return self.__quantity
 
-@quantity.setter
-def quantity(self, value):
+    @quantity.setter
+    def quantity(self, value):
         if not isinstance(value, int) or value < 0:
             raise ValueError("Quantity must be a non-negative integer")
         self.__quantity = value
-@property
-def unit_price(self):
-    return self.__unit_price
+    
+    @property
+    def unit_price(self):
+        return self.__unit_price
 
-@unit_price.setter
-def unit_price(self, value):
-    if not isinstance(value, (int, float)) or value < 0:
-        raise ValueError("Price must be a non-negative number")
-    self.__unit_price = value
+    @unit_price.setter
+    def unit_price(self, value):
+        if not isinstance(value, (int, float)) or value < 0:
+            raise ValueError("Price must be a non-negative number")
+        self.__unit_price = value
     
-@property
-def expiry_date(self):
-    return self.__expiry_date
+    @property
+    def expiry_date(self):
+        return self.__expiry_date
     
-@property
-def supplier(self):
-    return self.__supplier
+    @property
+    def supplier(self):
+        return self.__supplier
     
-@property
-def category(self):
-    return self.__category
+    @property
+    def category(self):
+        return self.__category
 
-#Function to convert product to dictionary for JSON serialization
-def to_dict(self):
-   return {
+    # Function to convert product to dictionary for JSON serialization
+    def to_dict(self):
+        return {
             "product_id": self.__product_id,
             "name": self.__name,
             "category": self.__category,
@@ -64,10 +67,6 @@ def to_dict(self):
             "supplier": self.__supplier
         }
    
-#Function to display product's id and name
-def __repr__(self):
-     return f"Product({self.__product_id}, {self.__name})"
- 
-
-
-
+    # Function to display product's id and name
+    def __repr__(self):
+        return f"Product({self.__product_id}, {self.__name})"

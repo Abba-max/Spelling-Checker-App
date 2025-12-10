@@ -7,17 +7,18 @@ from utilities.bloom_filter import BloomFilter
 from utilities.trie import Trie
 
 class InventoryManager:
-    def __init__(self, json_file:str="dat/stock.json"):
+    def __init__(self, json_file: str = "data/stock.json"):
         self.json_file = json_file
         self.products = []
-        self.bloom_filter = BloomFilter(size=1000,hash_count=3)
+        self.bloom_filter = BloomFilter(size=1000, hash_count=3)
         self.trie = Trie()
+        self.load_products()  # Load products when InventoryManager is created
     
-    def load_products(self): # Load products from JSON file
+    def load_products(self):  # Load products from JSON file
         try:
-            with open(Self.json_file,'r') as f: # Open JSON file in read lony mode
+            with open(self.json_file, 'r') as f:  # Open JSON file in read only mode
                 data = json.load(f)
-                for prod_data in data.get("products",[]): # Loop through all products
+                for prod_data in data.get("products", []):  # Loop through all products
                     product = Product(
                         product_id=prod_data["product_id"],
                         name=prod_data["name"],
@@ -39,52 +40,56 @@ class InventoryManager:
             
     def save_products(self):
         try:
-            with open(self.json_file,'r') as f:
+            # First read the existing data
+            with open(self.json_file, 'r') as f:
                 data = json.load(f)
-                data["products"] = [p.to_dict() for p in self.products] # Converting product to dictionary and saving in data
-                data["metadata"]["total_products"] = len(self.products) # Total size of products
-                data["metadata"]["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S") # Date saved
+            
+            # Update the data
+            data["products"] = [p.to_dict() for p in self.products]  # Converting product to dictionary and saving in data
+            data["metadata"]["total_products"] = len(self.products)  # Total size of products
+            data["metadata"]["last_updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Date saved
         
+            # Then write the updated data
             with open(self.json_file, 'w') as f:
-                json.dump(data,f,indent=2) # Writing all product data in a json file
+                json.dump(data, f, indent=2)  # Writing all product data in a json file
             
             print("✓ Inventory saved successfully")
             return True
         except Exception as e:
-          print(f"✗ Error saving products: {e}")
-          return False
+            print(f"✗ Error saving products: {e}")
+            return False
 
-    def search_with_autocomplete(self,prefix:str):
-        if not prefix.strip(): # Removes leading and trailing whitespaces from prefix 
+    def search_with_autocomplete(self, prefix: str):
+        if not prefix.strip():  # Removes leading and trailing whitespaces from prefix
             return []
-        if not self.bloom_filter.contain(prefix):
-            return []
+        # if not self.bloom_filter.contain(prefix):
+        #     return []
         
         return self.trie.search_prefix(prefix)
     
     def get_products_sorted_by_expiry(self):
         return sorted(self.products, key=lambda p: datetime.strptime(p.expiry_date, "%Y-%m-%d"))
     
-    def update_product_quantity(Self,product:Product,quantity_sold:int):
+    def update_product_quantity(self, product: Product, quantity_sold: int):
         if quantity_sold > product.quantity:
             raise ValueError(f"Cannot sell more than available stock ({product.quantity})")
         product.quantity = product.quantity - quantity_sold
         
-    def add_product(self,product:Product):
+    def add_product(self, product: Product):
         self.products.append(product)
         self.bloom_filter.add(product.name)
         self.trie.insert(product)
     
-    def update_product(self, product_id:str,**kwargs):
+    def update_product(self, product_id: str, **kwargs):
         for product in self.products:
-            if product.product_id ==product_id:
-                for key,value in kwargs.items():
-                    if hasattr(product,key):
-                        setattr(product,key,value)
+            if product.product_id == product_id:
+                for key, value in kwargs.items():
+                    if hasattr(product, key):
+                        setattr(product, key, value)
                 return True
         return False
     
-    def display_inventory(self,sort_by="expiry"): # By default, products are sorted by expiry_date
+    def display_inventory(self, sort_by="expiry"):  # By default, products are sorted by expiry_date
         if sort_by == "expiry":
             products = self.get_products_sorted_by_expiry()
         elif sort_by == "name":
@@ -106,6 +111,3 @@ class InventoryManager:
                   f"${p.unit_price/100:<9.2f} {p.expiry_date:<12} {p.supplier:<15}")
         
         print("=" * 100 + "\n")
-            
-    
-        

@@ -10,25 +10,24 @@ class Receipt:
         self.date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         self.items = []
         self.total = 0.0
-        
     
-    def add_item(self, product, quantity:int): # Method to add an item to the list of items bought
-        if quantity>product.quantity:
-            raise ValueError(f"Insufficint stock for {product.name}")
+    def add_item(self, product, quantity: int):  # Method to add an item to the list of items bought
+        if quantity > product.quantity:
+            raise ValueError(f"Insufficient stock for {product.name}")
         
-        item_total_price = (product.unitprice)*quantity
+        item_total_price = (product.unit_price) * quantity
         self.items.append({
             "product_id": product.product_id,
             "name": product.name,
             "quantity": quantity,
-            "unit_price": product.unit_price / 100,
-            "total": item_total
+            "unit_price": product.unit_price,
+            "total": item_total_price
         })
         
         self.total += item_total_price
         
-    def generate_text_receipt(self): # Function to generate a receipt
-        lines = [] #Used to contain the content of the receipt
+    def generate_text_receipt(self):  # Function to generate a receipt
+        lines = []  # Used to contain the content of the receipt
         lines.append("=" * 60)
         lines.append(" " * 23 + "RECEIPT")
         lines.append("=" * 60)
@@ -36,7 +35,7 @@ class Receipt:
         lines.append(f"Customer: {self.customer_name}")
         lines.append(f"Served by: {self.worker_name}")
         lines.append("-" * 60)
-        lines.append(f"{'Item':<25} {'Qty':>5} {'Price':>12} {'Total':>12}") # Header of the receipt spaced 
+        lines.append(f"{'Item':<25} {'Qty':>5} {'Price':>12} {'Total':>12}")  # Header of the receipt spaced
         lines.append("-" * 60)
         
         for item in self.items:
@@ -44,19 +43,20 @@ class Receipt:
                 f"{item['name'][:25]:<25} {item['quantity']:>5}"
                 f"${item['unit_price']:>11.2f} ${item['total']:>11.2f}"
             )
-            lines.append("-" * 60)
-            lines.append(f"{'':>35} {'TOTAL:':<10} ${self.total:>11.2f}")
-            lines.append("=" * 60)
+        
+        lines.append("-" * 60)
+        lines.append(f"{'':>35} {'TOTAL:':<10} ${self.total / 100:>11.2f}")
+        lines.append("=" * 60)
         
         return "\n".join(lines)
     
     def print_receipt(self):
-        print("\n"+self.generate_text_receipt()+"\n")
+        print("\n" + self.generate_text_receipt() + "\n")
         
-    def save_to_file(self,directory = "receipts"): # Method to save receipt to json file
-        os.makedirs(directory,exist_ok = True)
+    def save_to_file(self, directory="receipts"):  # Method to save receipt to json file
+        os.makedirs(directory, exist_ok=True)
         
-        filename = f"{directory}/receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json" 
+        filename = f"{directory}/receipt_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         receipt_data = {
             "date": self.date,
             "customer": self.customer_name,
@@ -65,9 +65,7 @@ class Receipt:
             "total": self.total
         }
         
-        with open(filename,"w") as f:
-            json.dump(receipt_data,f,indent=2)
+        with open(filename, "w") as f:
+            json.dump(receipt_data, f, indent=2)
             
-        return filename    
-          
-        
+        return filename

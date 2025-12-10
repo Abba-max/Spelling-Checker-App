@@ -9,21 +9,21 @@ class ConsoleUI:
         self.cart = []
         
     def display_menu(self):
-            print("\n" + "="*50)
-            print(" " * 15 + "MAIN MENU")
-            print("="*50)
-            print("1. Login as Worker")
-            print("2. Make Sale")
-            print("3. View Inventory")
-            print("4. Update Product")
-            print("5. Save & Exit")
-            print("="*50)
+        print("\n" + "="*50)
+        print(" " * 15 + "MAIN MENU")
+        print("="*50)
+        print("1. Login as Worker")
+        print("2. Make Sale")
+        print("3. View Inventory")
+        print("4. Update Product")
+        print("5. Save & Exit")
+        print("="*50)
+    
     def login_worker(self):
         worker_id = input("Enter Worker ID: ").strip()
         worker_name = input("Enter Worker Name: ").strip()
         self.current_worker = Worker(worker_id, worker_name)
         print(f"✓ Logged in as {self.current_worker}")
-        
     
     def search_product_interactive(self):
         print("\n" + "-"*50)
@@ -33,19 +33,19 @@ class ConsoleUI:
         while True:
             search_term = input("\nSearch product: ").strip()
             if search_term.lower() == 'done':
-                 break
+                break
             if not search_term:
-                 continue
-            matches = self.inventory.search_with_autocomplete(search_term) # Get autocompleted suggestions
+                continue
+            matches = self.inventory.search_with_autocomplete(search_term)  # Get autocompleted suggestions
             if not matches:
                 print("✗ No products found matching '{}'".format(search_term))
                 continue
             
-            print(f"\n{'#':<4} {'Name':<20} {'Stock':<8} {'Price':<10}") # Header for displaying matching products
+            print(f"\n{'#':<4} {'Name':<20} {'Stock':<8} {'Price':<10}")  # Header for displaying matching products
             print("-"*45)
             
             for idx, product in enumerate(matches, 1):
-                  print(f"{idx:<4} {product.name:<20} {product.quantity:<8} ${product.unit_price/100:<9.2f}")
+                print(f"{idx:<4} {product.name:<20} {product.quantity:<8} ${product.unit_price/100:<9.2f}")
 
             try:
                 choice = int(input("\nSelect product number: "))
@@ -58,11 +58,11 @@ class ConsoleUI:
                     self.cart.append({"product": selected, "quantity": quantity})
                     print(f"✓ Added {quantity}x {selected.name} to cart")
                 else:
-                     print("✗ Invalid selection")
+                    print("✗ Invalid selection")
             except ValueError:
                 print("✗ Invalid input")
                 
-    def make_sale(self): # Adding products to cart and printing a receipt
+    def make_sale(self):  # Adding products to cart and printing a receipt
         if not self.current_worker:
             print("✗ Please login first")
             return
@@ -75,7 +75,7 @@ class ConsoleUI:
         if not self.cart:
             print("✗ Cart is empty")
             return
-        receipt = Receipt(customer_name, self.current_worker.name) # Creating a a Receipt Object
+        receipt = Receipt(customer_name, self.current_worker.name)  # Creating a Receipt Object
         
         try:
             for item in self.cart:
@@ -92,7 +92,7 @@ class ConsoleUI:
         except Exception as e:
             print(f"✗ Error processing sale: {e}")
             
-    def view_inventory(Self):
+    def view_inventory(self):
         print("\nSort by:")
         print("1. Expiry Date")
         print("2. Name")
@@ -102,12 +102,13 @@ class ConsoleUI:
         self.inventory.display_inventory(sort_by)
 
     def update_product(self):
-        product_id = input("\nProduct ID to update:").strip()
+        product_id = input("\nProduct ID to update: ").strip()
         
         product = None
         for p in self.inventory.products:
             if p.product_id == product_id:
-                product = pbreak
+                product = p
+                break
         if not product:
             print("✗ Product not found")
             return
@@ -117,7 +118,7 @@ class ConsoleUI:
         print("2. Price")
         print("3. Both")
         
-        choice = input("Choice:").strip()
+        choice = input("Choice: ").strip()
         
         try:
             if choice in ["1", "3"]:
@@ -139,7 +140,7 @@ class ConsoleUI:
         
         while True:
             self.display_menu()
-            choice = input("\nSelect option (1-5)").strip()
+            choice = input("\nSelect option (1-5): ").strip()
             
             if choice == "1":
                 self.login_worker()
@@ -151,7 +152,7 @@ class ConsoleUI:
                 self.update_product()
             elif choice == "5":
                 self.inventory.save_products()
-                print("\n Goodbye!")
+                print("\n✓ Goodbye!")
                 break
             else:
                 print("✗ Invalid option")
