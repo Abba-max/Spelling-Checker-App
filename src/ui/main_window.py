@@ -99,3 +99,36 @@ class MainWindow:
                 ttk.Label(frame, text=label, font=('Arial', 10, 'bold')).pack(anchor=tk.W)
                 self.stats_labels[key] = ttk.Label(frame, text="0", font=('Arial', 14))
                 self.stats_labels[key].pack(anchor=tk.W)
+                
+        
+        def update_statistics():
+            total = len(self.inventory.products)
+            low_stock = sum(1 for p in self.inventory.products if p.quantity < 30)
+            out_of_stock = sum(1 for p in self.inventory.products if p.quantity == 0)
+
+            expiring_soon = 0
+            today = datetime.now()
+            for p in self.inventory.products:
+                     try:
+                            expiry = datetime.strptime(p.expiry_date, "%Y-%m-%d")
+                            days_until_expiry = (expiry - today).days
+                            if 0 <= days_until_expiry <= 7:
+                                   expiring_soon += 1
+                     except:
+                            pass
+            self.stats_labels['total_products'].config(text=str(total))
+            self.stats_labels['low_stock'].config(
+            text=str(low_stock), 
+            foreground='#F39C12' if low_stock > 0 else '#27AE60'
+            )
+            self.stats_labels['expiring_soon'].config(
+            text=str(expiring_soon),
+            foreground='#E74C3C' if expiring_soon > 0 else '#27AE60'
+            )
+            self.stats_labels['out_of_stock'].config(
+            text=str(out_of_stock),
+            foreground='#E74C3C' if out_of_stock > 0 else '#27AE60'
+            )
+            
+        def open_sale_window(self): # Open sale window
+                SaleWindow(self.root, self.inventory, self.worker, self.update_statistics) 

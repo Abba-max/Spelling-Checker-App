@@ -14,6 +14,7 @@ class ConsoleUI:
         print("="*50)
         print("1. Login as Worker")
         print("2. Make Sale")
+        print("0. Add Product")
         print("3. View Inventory")
         print("4. Update Product")
         print("5. Save & Exit")
@@ -91,6 +92,28 @@ class ConsoleUI:
             self.inventory.save_products()
         except Exception as e:
             print(f"✗ Error processing sale: {e}")
+            
+    def add_product():
+        # id = input("Enter product ID")
+        # name = input("Enter product name")
+        # category = input("Enter product category")
+        # quantity_in_stock = eval(input("Enter quntity input in store"))
+        # unit_price = eval(input("Enter unit price for {name}"))
+        # expiry_date = input("Enter expiry date in format 'year-month-day' ")
+        # supplier = input("Enter supplier name")
+        
+        # product = Product(id, name, category,quantity_in_stock,unit_price,expiry_date,supplier)
+        # try: 
+        #     with open(self.json_file, 'w') as f:
+        #          json.dump(product.to_dict(), f, indent=2)  # Writing all product data in a json file, converting them to a dictionary before
+        #          print("✓ New Product saved successfully")
+        #          return True
+        # except:
+        #     print("An exception occured...")
+        return
+        
+    
+    
             
     def view_inventory(self):
         print("\nSort by:")
