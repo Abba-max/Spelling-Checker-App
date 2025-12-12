@@ -46,7 +46,7 @@ class ConsoleUI:
             print("-"*45)
             
             for idx, product in enumerate(matches, 1):
-                print(f"{idx:<4} {product.name:<20} {product.quantity:<8} ${product.unit_price/100:<9.2f}")
+                print(f"{idx:<4} {product.name:<20} {product.quantity:<8} FCFA {product.unit_price:<9.2f}")
 
             try:
                 choice = int(input("\nSelect product number: "))

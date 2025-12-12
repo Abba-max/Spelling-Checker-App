@@ -41,11 +41,11 @@ class Receipt:
         for item in self.items:
             lines.append(
                 f"{item['name'][:25]:<25} {item['quantity']:>5}"
-                f"${item['unit_price']:>11.2f} ${item['total']:>11.2f}"
+                f"FCFA {item['unit_price']:>11.2f} FCFA {item['total']:>11.2f}"
             )
         
         lines.append("-" * 60)
-        lines.append(f"{'':>35} {'TOTAL:':<10} ${self.total / 100:>11.2f}")
+        lines.append(f"{'':>35} {'TOTAL:':<10} FCFA {self.total :>11.2f}")
         lines.append("=" * 60)
         
         return "\n".join(lines)

@@ -2,16 +2,16 @@
   "metadata": {
     "file_version": "1.0",
     "generated_on": "2024-11-20",
-    "total_products": 20,
+    "total_products": 21,
     "description": "Sample product database for Spelling Checker Project with 200 single-word product names",
-    "last_updated": "2025-12-12 12:43:36"
+    "last_updated": "2025-12-12 20:12:43"
   },
   "products": [
     {
       "product_id": "P001",
       "name": "Laptop",
       "category": "Electronics",
-      "quantity_in_stock": 43,
+      "quantity_in_stock": 40,
       "unit_price": 10000.0,
       "expiry_date": "2025-12-31",
       "supplier": "TechCorp"
@@ -92,7 +92,7 @@
       "product_id": "P010",
       "name": "Camera",
       "category": "Electronics",
-      "quantity_in_stock": 18,
+      "quantity_in_stock": 15,
       "unit_price": 59900,
       "expiry_date": "2025-08-10",
       "supplier": "PhotoCorp"
@@ -186,6 +186,15 @@
       "unit_price": 19900,
       "expiry_date": "2026-03-30",
       "supplier": "HomeFurnishings"
+    },
+    {
+      "product_id": "P022",
+      "name": "Ipad10PR0",
+      "category": "Electronics",
+      "quantity_in_stock": 40,
+      "unit_price": 2009,
+      "expiry_date": "2026-12-12",
+      "supplier": "Apple"
     }
   ]
 }

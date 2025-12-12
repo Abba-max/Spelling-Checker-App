@@ -1,0 +1,22 @@
+{
+  "date": "2025-12-12 19:54:12",
+  "customer": "Customer1",
+  "worker": "Worker1",
+  "items": [
+    {
+      "product_id": "P010",
+      "name": "Camera",
+      "quantity": 3,
+      "unit_price": 59900,
+      "total": 179700
+    },
+    {
+      "product_id": "P001",
+      "name": "Laptop",
+      "quantity": 3,
+      "unit_price": 10000.0,
+      "total": 30000.0
+    }
+  ],
+  "total": 209700.0
+}

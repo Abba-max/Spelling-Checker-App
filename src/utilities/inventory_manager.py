@@ -108,6 +108,6 @@ class InventoryManager:
         for p in products:
             stock_status = "⚠ LOW" if p.quantity < 30 else str(p.quantity)
             print(f"{p.product_id:<8} {p.name:<18} {p.category:<15} {stock_status:<8} "
-                  f"${p.unit_price/100:<9.2f} {p.expiry_date:<12} {p.supplier:<15}")
+                  f"FCFA{p.unit_price:<9.2f} {p.expiry_date:<12} {p.supplier:<15}")
         
         print("=" * 100 + "\n")
