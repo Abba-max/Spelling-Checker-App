@@ -9,7 +9,7 @@ class LoginWindow:
         self.window.geometry("400x300")
         self.window.resizable(False, False)
         self.on_success = on_success_callback
-        self.center_window() # Place the window at the center of the screen
+        # self.center_window() # Place the window at the center of the screen
         self.create_widgets() # Create UI
         self.window.grab_set()
         self.window.focus_set()

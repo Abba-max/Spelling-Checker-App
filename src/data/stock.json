@@ -4,7 +4,7 @@
     "generated_on": "2024-11-20",
     "total_products": 20,
     "description": "Sample product database for Spelling Checker Project with 200 single-word product names",
-    "last_updated": "2025-12-10 06:16:40"
+    "last_updated": "2025-12-12 12:43:36"
   },
   "products": [
     {
@@ -12,7 +12,7 @@
       "name": "Laptop",
       "category": "Electronics",
       "quantity_in_stock": 43,
-      "unit_price": 99900,
+      "unit_price": 10000.0,
       "expiry_date": "2025-12-31",
       "supplier": "TechCorp"
     },
@@ -92,7 +92,7 @@
       "product_id": "P010",
       "name": "Camera",
       "category": "Electronics",
-      "quantity_in_stock": 23,
+      "quantity_in_stock": 18,
       "unit_price": 59900,
       "expiry_date": "2025-08-10",
       "supplier": "PhotoCorp"

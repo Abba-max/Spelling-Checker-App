@@ -5,7 +5,7 @@ from ui.inventory_window import InventoryWindow
 from datetime import datetime
 
 class MainWindow:
-    def __init__(Self,root,inventory,worker):
+    def __init__(self,root,inventory,worker):
         self.root = root
         self.inventory = inventory
         self.worker = worker
