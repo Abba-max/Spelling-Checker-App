@@ -4,7 +4,7 @@
     "generated_on": "2024-11-20",
     "total_products": 21,
     "description": "Sample product database for Spelling Checker Project with 200 single-word product names",
-    "last_updated": "2025-12-12 20:12:43"
+    "last_updated": "2025-12-12 21:40:52"
   },
   "products": [
     {
@@ -119,7 +119,7 @@
       "product_id": "P013",
       "name": "Lamp",
       "category": "Furniture",
-      "quantity_in_stock": 89,
+      "quantity_in_stock": 50,
       "unit_price": 4900,
       "expiry_date": "2026-07-20",
       "supplier": "HomeGoods"

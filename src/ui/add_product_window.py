@@ -85,7 +85,7 @@ class AddProductWindow:
         # Helper text
         ttk.Label(
             main_frame, 
-            text="Enter price in cents (e.g., 19900 = $199.00)",
+            text="Enter price in FCFA ",
             foreground='gray',
             font=('Arial', 9)
         ).pack(pady=(0, 10))

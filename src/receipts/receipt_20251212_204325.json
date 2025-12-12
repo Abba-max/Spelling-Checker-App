@@ -1,0 +1,15 @@
+{
+  "date": "2025-12-12 20:43:25",
+  "customer": "Customer1",
+  "worker": "Worker1",
+  "items": [
+    {
+      "product_id": "P013",
+      "name": "Lamp",
+      "quantity": 89,
+      "unit_price": 4900,
+      "total": 436100
+    }
+  ],
+  "total": 436100.0
+}

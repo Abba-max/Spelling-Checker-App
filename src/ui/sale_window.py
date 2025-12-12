@@ -140,7 +140,6 @@ class SaleWindow:
         ).pack(side=tk.RIGHT, padx=5)
     
     def on_search_change(self, *args):
-        """Handle search text change"""
         search_term = self.search_var.get()
         if not search_term:
             self.results_listbox.delete(0, tk.END)

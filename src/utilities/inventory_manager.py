@@ -111,3 +111,11 @@ class InventoryManager:
                   f"FCFA{p.unit_price:<9.2f} {p.expiry_date:<12} {p.supplier:<15}")
         
         print("=" * 100 + "\n")
+        
+    def delete_product(self, product_id: str) -> bool:
+        for i, product in enumerate(self.products):
+             if product.product_id == product_id:
+                del self.products[i]
+                self.save_products()
+                return True
+        return False
