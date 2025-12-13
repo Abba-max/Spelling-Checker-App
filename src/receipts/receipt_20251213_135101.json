@@ -1,0 +1,15 @@
+{
+  "date": "2025-12-13 13:51:01",
+  "customer": "John",
+  "worker": "marc",
+  "items": [
+    {
+      "product_id": "P009",
+      "name": "Headphones",
+      "quantity": 72,
+      "unit_price": 19900,
+      "total": 1432800
+    }
+  ],
+  "total": 1432800.0
+}

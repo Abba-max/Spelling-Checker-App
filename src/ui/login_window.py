@@ -6,7 +6,7 @@ class LoginWindow:
     def __init__(self,parent,on_success_callback):
         self.window = tk.Toplevel(parent)
         self.window.title("Login - Inventory Management System")
-        self.window.geometry("400x300")
+        self.window.geometry("400x400")
         self.window.resizable(False, False)
         self.on_success = on_success_callback
         # self.center_window() # Place the window at the center of the screen

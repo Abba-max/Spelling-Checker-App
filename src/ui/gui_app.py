@@ -16,10 +16,10 @@ class InventoryGUIApp:
     def setup_styles(self):
         style = ttk.Style()
         style.theme_use('clam')
-        style.configure('TFrame', background='#ECF0F1')
-        style.configure('TLabel', background='#ECF0F1', foreground='#2C3E50')
-        style.configure('TButton', background='#3498DB', foreground='white')
-        style.configure('Header.TLabel', font=('Arial', 16, 'bold'))
+        style.configure('TFrame', background="#DBC76A")
+        style.configure('TLabel', background='#DBC76A', foreground='#3498DB')
+        style.configure('TButton', background='#3498DB', foreground='#000000')
+        style.configure('Header.TLabel', background="#CABD82", font=('Arial', 16, 'bold'))
         style.configure('Title.TLabel', font=('Arial', 24, 'bold'))
     
     def show_login(self):

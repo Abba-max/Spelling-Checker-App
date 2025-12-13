@@ -1,190 +1,1816 @@
 {
   "metadata": {
-    "file_version": "1.0",
-    "generated_on": "2024-11-20",
-    "total_products": 200,
-    "description": "Sample product database for Spelling Checker Project with 200 single-word product names"
+    "file_version": "2.0",
+    "generated_on": "2025-12-13",
+    "total_products": 2000,
+    "description": "Extended product database for Spelling Checker Project with 2000 single-word product names",
+    "last_updated": "2025-12-13 14:30:00"
   },
   "products": [
-    {
-      "product_id": "P001",
-      "name": "Laptop",
-      "category": "Electronics",
-      "quantity_in_stock": 45,
-      "unit_price": 99900,
-      "expiry_date": "2025-12-31",
-      "supplier": "TechCorp"
-    },
     
     {
-      "product_id": "P002",
-      "name": "Phone",
+      "product_id": "P023",
+      "name": "Router",
       "category": "Electronics",
-      "quantity_in_stock": 78,
-      "unit_price": 79900,
+      "quantity_in_stock": 0,
+      "unit_price": 7900,
+      "expiry_date": "2026-02-14",
+      "supplier": "NetCorp"
+    },
+    {
+      "product_id": "P024",
+      "name": "Scanner",
+      "category": "Electronics",
+      "quantity_in_stock": 28,
+      "unit_price": 15900,
       "expiry_date": "2025-11-30",
-      "supplier": "MobileWorld"
-    },
-    {
-      "product_id": "P003",
-      "name": "Tablet",
-      "category": "Electronics",
-      "quantity_in_stock": 32,
-      "unit_price": 49900,
-      "expiry_date": "2025-10-15",
-      "supplier": "TechCorp"
-    },
-    {
-      "product_id": "P004",
-      "name": "Monitor",
-      "category": "Electronics",
-      "quantity_in_stock": 27,
-      "unit_price": 29900,
-      "expiry_date": "2026-03-20",
-      "supplier": "DisplayTech"
-    },
-    {
-      "product_id": "P005",
-      "name": "Keyboard",
-      "category": "Electronics",
-      "quantity_in_stock": 89,
-      "unit_price": 8900,
-      "expiry_date": "2026-05-10",
-      "supplier": "PeripheralsInc"
-    },
-    {
-      "product_id": "P006",
-      "name": "Mouse",
-      "category": "Electronics",
-      "quantity_in_stock": 112,
-      "unit_price": 4900,
-      "expiry_date": "2026-04-25",
-      "supplier": "PeripheralsInc"
-    },
-    {
-      "product_id": "P007",
-      "name": "Printer",
-      "category": "Electronics",
-      "quantity_in_stock": 34,
-      "unit_price": 19900,
-      "expiry_date": "2025-09-30",
       "supplier": "PrintTech"
     },
     {
-      "product_id": "P008",
-      "name": "Speaker",
+      "product_id": "P025",
+      "name": "Projector",
       "category": "Electronics",
-      "quantity_in_stock": 56,
-      "unit_price": 14009,
-      "expiry_date": "2025-12-15",
-      "supplier": "AudioTech"
+      "quantity_in_stock": 19,
+      "unit_price": 89900,
+      "expiry_date": "2026-03-15",
+      "supplier": "DisplayTech"
     },
     {
-      "product_id": "P009",
-      "name": "Headphones",
+      "product_id": "P026",
+      "name": "Smartwatch",
       "category": "Electronics",
-      "quantity_in_stock": 78,
-      "unit_price": 19900,
-      "expiry_date": "2026-01-20",
-      "supplier": "AudioTech"
-    },
-    {
-      "product_id": "P010",
-      "name": "Camera",
-      "category": "Electronics",
-      "quantity_in_stock": 23,
-      "unit_price": 59900,
-      "expiry_date": "2025-08-10",
-      "supplier": "PhotoCorp"
-    },
-    {
-      "product_id": "P011",
-      "name": "Chair",
-      "category": "Furniture",
       "quantity_in_stock": 67,
-      "unit_price": 19900,
+      "unit_price": 29900,
+      "expiry_date": "2025-12-25",
+      "supplier": "MobileWorld"
+    },
+    {
+      "product_id": "P027",
+      "name": "Fitnessband",
+      "category": "Electronics",
+      "quantity_in_stock": 92,
+      "unit_price": 9900,
+      "expiry_date": "2026-01-30",
+      "supplier": "MobileWorld"
+    },
+    {
+      "product_id": "P028",
+      "name": "Earbuds",
+      "category": "Electronics",
+      "quantity_in_stock": 124,
+      "unit_price": 12900,
+      "expiry_date": "2026-04-10",
+      "supplier": "AudioTech"
+    },
+    {
+      "product_id": "P029",
+      "name": "Microphone",
+      "category": "Electronics",
+      "quantity_in_stock": 37,
+      "unit_price": 8900,
+      "expiry_date": "2026-05-20",
+      "supplier": "AudioTech"
+    },
+    {
+      "product_id": "P030",
+      "name": "Webcam",
+      "category": "Electronics",
+      "quantity_in_stock": 58,
+      "unit_price": 6900,
+      "expiry_date": "2025-10-30",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P031",
+      "name": "Harddrive",
+      "category": "Electronics",
+      "quantity_in_stock": 43,
+      "unit_price": 12900,
+      "expiry_date": "2026-06-15",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P032",
+      "name": "SSD",
+      "category": "Electronics",
+      "quantity_in_stock": 76,
+      "unit_price": 17900,
+      "expiry_date": "2026-07-25",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P033",
+      "name": "USBdrive",
+      "category": "Electronics",
+      "quantity_in_stock": 210,
+      "unit_price": 1900,
+      "expiry_date": "2026-08-30",
+      "supplier": "PeripheralsInc"
+    },
+    {
+      "product_id": "P034",
+      "name": "Memorycard",
+      "category": "Electronics",
+      "quantity_in_stock": 189,
+      "unit_price": 2900,
+      "expiry_date": "2026-09-15",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P035",
+      "name": "Powerbank",
+      "category": "Electronics",
+      "quantity_in_stock": 95,
+      "unit_price": 5900,
+      "expiry_date": "2025-12-20",
+      "supplier": "MobileWorld"
+    },
+    {
+      "product_id": "P036",
+      "name": "Charger",
+      "category": "Electronics",
+      "quantity_in_stock": 156,
+      "unit_price": 3900,
+      "expiry_date": "2026-03-30",
+      "supplier": "MobileWorld"
+    },
+    {
+      "product_id": "P037",
+      "name": "Cable",
+      "category": "Electronics",
+      "quantity_in_stock": 320,
+      "unit_price": 900,
+      "expiry_date": "2027-01-15",
+      "supplier": "PeripheralsInc"
+    },
+    {
+      "product_id": "P038",
+      "name": "Adapter",
+      "category": "Electronics",
+      "quantity_in_stock": 87,
+      "unit_price": 2900,
+      "expiry_date": "2026-11-20",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P039",
+      "name": "Dongle",
+      "category": "Electronics",
+      "quantity_in_stock": 54,
+      "unit_price": 4900,
+      "expiry_date": "2026-04-05",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P040",
+      "name": "Stand",
+      "category": "Electronics",
+      "quantity_in_stock": 72,
+      "unit_price": 7900,
+      "expiry_date": "2026-05-15",
+      "supplier": "PeripheralsInc"
+    },
+    {
+      "product_id": "P041",
+      "name": "Cooler",
+      "category": "Electronics",
+      "quantity_in_stock": 41,
+      "unit_price": 8900,
+      "expiry_date": "2026-06-25",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P042",
+      "name": "Fan",
+      "category": "Electronics",
+      "quantity_in_stock": 63,
+      "unit_price": 4900,
+      "expiry_date": "2026-02-28",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P043",
+      "name": "Socks",
+      "category": "Clothing",
+      "quantity_in_stock": 245,
+      "unit_price": 900,
+      "expiry_date": "2026-12-31",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P044",
+      "name": "Shirt",
+      "category": "Clothing",
+      "quantity_in_stock": 178,
+      "unit_price": 2900,
+      "expiry_date": "2026-11-30",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P045",
+      "name": "Pants",
+      "category": "Clothing",
+      "quantity_in_stock": 156,
+      "unit_price": 3900,
+      "expiry_date": "2026-10-15",
+      "supplier": "DenimCo"
+    },
+    {
+      "product_id": "P046",
+      "name": "Jacket",
+      "category": "Clothing",
+      "quantity_in_stock": 89,
+      "unit_price": 8900,
+      "expiry_date": "2026-09-20",
+      "supplier": "OutdoorGear"
+    },
+    {
+      "product_id": "P047",
+      "name": "Sweater",
+      "category": "Clothing",
+      "quantity_in_stock": 67,
+      "unit_price": 4900,
+      "expiry_date": "2026-08-15",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P048",
+      "name": "Dress",
+      "category": "Clothing",
+      "quantity_in_stock": 94,
+      "unit_price": 7900,
+      "expiry_date": "2026-07-30",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P049",
+      "name": "Skirt",
+      "category": "Clothing",
+      "quantity_in_stock": 76,
+      "unit_price": 3900,
+      "expiry_date": "2026-06-25",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P050",
+      "name": "Shorts",
+      "category": "Clothing",
+      "quantity_in_stock": 123,
+      "unit_price": 2900,
+      "expiry_date": "2026-05-20",
+      "supplier": "DenimCo"
+    },
+    {
+      "product_id": "P051",
+      "name": "Blouse",
+      "category": "Clothing",
+      "quantity_in_stock": 85,
+      "unit_price": 4900,
+      "expiry_date": "2026-04-15",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P052",
+      "name": "Tshirt",
+      "category": "Clothing",
+      "quantity_in_stock": 312,
+      "unit_price": 1900,
+      "expiry_date": "2026-03-10",
+      "supplier": "BasicWear"
+    },
+    {
+      "product_id": "P053",
+      "name": "Jeans",
+      "category": "Clothing",
+      "quantity_in_stock": 167,
+      "unit_price": 5900,
+      "expiry_date": "2026-02-05",
+      "supplier": "DenimCo"
+    },
+    {
+      "product_id": "P054",
+      "name": "Coat",
+      "category": "Clothing",
+      "quantity_in_stock": 45,
+      "unit_price": 12900,
+      "expiry_date": "2026-01-30",
+      "supplier": "OutdoorGear"
+    },
+    {
+      "product_id": "P055",
+      "name": "Vest",
+      "category": "Clothing",
+      "quantity_in_stock": 78,
+      "unit_price": 3900,
+      "expiry_date": "2025-12-25",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P056",
+      "name": "Tie",
+      "category": "Clothing",
+      "quantity_in_stock": 134,
+      "unit_price": 1900,
+      "expiry_date": "2025-11-20",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P057",
+      "name": "Belt",
+      "category": "Clothing",
+      "quantity_in_stock": 189,
+      "unit_price": 2900,
+      "expiry_date": "2025-10-15",
+      "supplier": "LeatherWorks"
+    },
+    {
+      "product_id": "P058",
+      "name": "Hat",
+      "category": "Clothing",
+      "quantity_in_stock": 156,
+      "unit_price": 2900,
+      "expiry_date": "2025-09-10",
+      "supplier": "HeadwearCo"
+    },
+    {
+      "product_id": "P059",
+      "name": "Cap",
+      "category": "Clothing",
+      "quantity_in_stock": 234,
+      "unit_price": 1900,
+      "expiry_date": "2025-08-05",
+      "supplier": "HeadwearCo"
+    },
+    {
+      "product_id": "P060",
+      "name": "Scarf",
+      "category": "Clothing",
+      "quantity_in_stock": 145,
+      "unit_price": 2900,
+      "expiry_date": "2025-07-01",
+      "supplier": "FashionHub"
+    },
+    {
+      "product_id": "P061",
+      "name": "Gloves",
+      "category": "Clothing",
+      "quantity_in_stock": 98,
+      "unit_price": 1900,
+      "expiry_date": "2025-06-15",
+      "supplier": "OutdoorGear"
+    },
+    {
+      "product_id": "P062",
+      "name": "Shoes",
+      "category": "Clothing",
+      "quantity_in_stock": 156,
+      "unit_price": 9900,
+      "expiry_date": "2025-05-20",
+      "supplier": "FootwearCo"
+    },
+    {
+      "product_id": "P063",
+      "name": "Sneakers",
+      "category": "Clothing",
+      "quantity_in_stock": 189,
+      "unit_price": 12900,
+      "expiry_date": "2025-04-25",
+      "supplier": "SportShoeCo"
+    },
+    {
+      "product_id": "P064",
+      "name": "Boots",
+      "category": "Clothing",
+      "quantity_in_stock": 67,
+      "unit_price": 14900,
+      "expiry_date": "2025-03-30",
+      "supplier": "OutdoorGear"
+    },
+    {
+      "product_id": "P065",
+      "name": "Sandals",
+      "category": "Clothing",
+      "quantity_in_stock": 134,
+      "unit_price": 5900,
+      "expiry_date": "2025-02-28",
+      "supplier": "FootwearCo"
+    },
+    {
+      "product_id": "P066",
+      "name": "Slippers",
+      "category": "Clothing",
+      "quantity_in_stock": 245,
+      "unit_price": 2900,
+      "expiry_date": "2025-01-15",
+      "supplier": "HomeComfort"
+    },
+    {
+      "product_id": "P067",
+      "name": "Sunglasses",
+      "category": "Clothing",
+      "quantity_in_stock": 89,
+      "unit_price": 7900,
+      "expiry_date": "2024-12-31",
+      "supplier": "EyeWearCo"
+    },
+    {
+      "product_id": "P068",
+      "name": "Watch",
+      "category": "Clothing",
+      "quantity_in_stock": 56,
+      "unit_price": 29900,
+      "expiry_date": "2026-08-20",
+      "supplier": "TimeCorp"
+    },
+    {
+      "product_id": "P069",
+      "name": "Bracelet",
+      "category": "Clothing",
+      "quantity_in_stock": 178,
+      "unit_price": 4900,
+      "expiry_date": "2026-07-15",
+      "supplier": "JewelryCo"
+    },
+    {
+      "product_id": "P070",
+      "name": "Necklace",
+      "category": "Clothing",
+      "quantity_in_stock": 94,
+      "unit_price": 8900,
+      "expiry_date": "2026-06-10",
+      "supplier": "JewelryCo"
+    },
+    {
+      "product_id": "P071",
+      "name": "Earrings",
+      "category": "Clothing",
+      "quantity_in_stock": 156,
+      "unit_price": 3900,
+      "expiry_date": "2026-05-05",
+      "supplier": "JewelryCo"
+    },
+    {
+      "product_id": "P072",
+      "name": "Ring",
+      "category": "Clothing",
+      "quantity_in_stock": 189,
+      "unit_price": 5900,
+      "expiry_date": "2026-04-30",
+      "supplier": "JewelryCo"
+    },
+    {
+      "product_id": "P073",
+      "name": "Bread",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 300,
+      "expiry_date": "2025-03-15",
+      "supplier": "BakeryCo"
+    },
+    {
+      "product_id": "P074",
+      "name": "Milk",
+      "category": "Food",
+      "quantity_in_stock": 234,
+      "unit_price": 200,
+      "expiry_date": "2025-03-10",
+      "supplier": "DairyFarm"
+    },
+    {
+      "product_id": "P075",
+      "name": "Cheese",
+      "category": "Food",
+      "quantity_in_stock": 167,
+      "unit_price": 900,
+      "expiry_date": "2025-04-20",
+      "supplier": "DairyFarm"
+    },
+    {
+      "product_id": "P076",
+      "name": "Butter",
+      "category": "Food",
+      "quantity_in_stock": 145,
+      "unit_price": 800,
+      "expiry_date": "2025-05-15",
+      "supplier": "DairyFarm"
+    },
+    {
+      "product_id": "P077",
+      "name": "Eggs",
+      "category": "Food",
+      "quantity_in_stock": 289,
+      "unit_price": 500,
+      "expiry_date": "2025-03-25",
+      "supplier": "PoultryCo"
+    },
+    {
+      "product_id": "P078",
+      "name": "Rice",
+      "category": "Food",
+      "quantity_in_stock": 178,
+      "unit_price": 1200,
+      "expiry_date": "2026-01-30",
+      "supplier": "GrainCo"
+    },
+    {
+      "product_id": "P079",
+      "name": "Pasta",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 800,
+      "expiry_date": "2026-03-15",
+      "supplier": "GrainCo"
+    },
+    {
+      "product_id": "P080",
+      "name": "Cereal",
+      "category": "Food",
+      "quantity_in_stock": 134,
+      "unit_price": 900,
+      "expiry_date": "2025-11-30",
+      "supplier": "BreakfastCo"
+    },
+    {
+      "product_id": "P081",
+      "name": "Coffee",
+      "category": "Food",
+      "quantity_in_stock": 189,
+      "unit_price": 1900,
+      "expiry_date": "2026-06-30",
+      "supplier": "BeverageCo"
+    },
+    {
+      "product_id": "P082",
+      "name": "Tea",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 1200,
+      "expiry_date": "2026-08-15",
+      "supplier": "BeverageCo"
+    },
+    {
+      "product_id": "P083",
+      "name": "Sugar",
+      "category": "Food",
+      "quantity_in_stock": 245,
+      "unit_price": 600,
+      "expiry_date": "2026-12-31",
+      "supplier": "SweetCo"
+    },
+    {
+      "product_id": "P084",
+      "name": "Salt",
+      "category": "Food",
+      "quantity_in_stock": 189,
+      "unit_price": 200,
+      "expiry_date": "2027-06-30",
+      "supplier": "SpiceCo"
+    },
+    {
+      "product_id": "P085",
+      "name": "Pepper",
+      "category": "Food",
+      "quantity_in_stock": 167,
+      "unit_price": 400,
+      "expiry_date": "2026-10-15",
+      "supplier": "SpiceCo"
+    },
+    {
+      "product_id": "P086",
+      "name": "Oil",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 1500,
+      "expiry_date": "2026-04-30",
+      "supplier": "CookingCo"
+    },
+    {
+      "product_id": "P087",
+      "name": "Vinegar",
+      "category": "Food",
+      "quantity_in_stock": 134,
+      "unit_price": 800,
+      "expiry_date": "2026-07-15",
+      "supplier": "CookingCo"
+    },
+    {
+      "product_id": "P088",
+      "name": "Sauce",
+      "category": "Food",
+      "quantity_in_stock": 189,
+      "unit_price": 700,
+      "expiry_date": "2025-12-20",
+      "supplier": "CondimentCo"
+    },
+    {
+      "product_id": "P089",
+      "name": "Ketchup",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 500,
+      "expiry_date": "2025-11-15",
+      "supplier": "CondimentCo"
+    },
+    {
+      "product_id": "P090",
+      "name": "Mayo",
+      "category": "Food",
+      "quantity_in_stock": 134,
+      "unit_price": 600,
+      "expiry_date": "2025-10-10",
+      "supplier": "CondimentCo"
+    },
+    {
+      "product_id": "P091",
+      "name": "Jam",
+      "category": "Food",
+      "quantity_in_stock": 167,
+      "unit_price": 700,
+      "expiry_date": "2025-09-05",
+      "supplier": "PreserveCo"
+    },
+    {
+      "product_id": "P092",
+      "name": "Honey",
+      "category": "Food",
+      "quantity_in_stock": 89,
+      "unit_price": 1200,
+      "expiry_date": "2026-05-20",
+      "supplier": "BeeCo"
+    },
+    {
+      "product_id": "P093",
+      "name": "Cookies",
+      "category": "Food",
+      "quantity_in_stock": 234,
+      "unit_price": 600,
+      "expiry_date": "2025-08-30",
+      "supplier": "SnackCo"
+    },
+    {
+      "product_id": "P094",
+      "name": "Chips",
+      "category": "Food",
+      "quantity_in_stock": 289,
+      "unit_price": 400,
+      "expiry_date": "2025-07-25",
+      "supplier": "SnackCo"
+    },
+    {
+      "product_id": "P095",
+      "name": "Chocolate",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 800,
+      "expiry_date": "2025-06-20",
+      "supplier": "SweetCo"
+    },
+    {
+      "product_id": "P096",
+      "name": "Candy",
+      "category": "Food",
+      "quantity_in_stock": 345,
+      "unit_price": 300,
+      "expiry_date": "2025-05-15",
+      "supplier": "SweetCo"
+    },
+    {
+      "product_id": "P097",
+      "name": "Soda",
+      "category": "Food",
+      "quantity_in_stock": 189,
+      "unit_price": 400,
+      "expiry_date": "2026-02-28",
+      "supplier": "BeverageCo"
+    },
+    {
+      "product_id": "P098",
+      "name": "Juice",
+      "category": "Food",
+      "quantity_in_stock": 167,
+      "unit_price": 600,
+      "expiry_date": "2025-04-10",
+      "supplier": "BeverageCo"
+    },
+    {
+      "product_id": "P099",
+      "name": "Water",
+      "category": "Food",
+      "quantity_in_stock": 456,
+      "unit_price": 100,
+      "expiry_date": "2027-12-31",
+      "supplier": "AquaCo"
+    },
+    {
+      "product_id": "P100",
+      "name": "Beer",
+      "category": "Food",
+      "quantity_in_stock": 234,
+      "unit_price": 900,
+      "expiry_date": "2026-08-15",
+      "supplier": "BrewCo"
+    },
+    {
+      "product_id": "P101",
+      "name": "Wine",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 2900,
+      "expiry_date": "2027-05-20",
+      "supplier": "VineyardCo"
+    },
+    {
+      "product_id": "P102",
+      "name": "Book",
+      "category": "Books",
+      "quantity_in_stock": 345,
+      "unit_price": 1900,
+      "expiry_date": "2028-12-31",
+      "supplier": "BookStore"
+    },
+    {
+      "product_id": "P103",
+      "name": "Notebook",
+      "category": "Books",
+      "quantity_in_stock": 456,
+      "unit_price": 500,
+      "expiry_date": "2027-06-30",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P104",
+      "name": "Pen",
+      "category": "Books",
+      "quantity_in_stock": 789,
+      "unit_price": 200,
+      "expiry_date": "2028-03-15",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P105",
+      "name": "Pencil",
+      "category": "Books",
+      "quantity_in_stock": 678,
+      "unit_price": 100,
+      "expiry_date": "2028-04-20",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P106",
+      "name": "Marker",
+      "category": "Books",
+      "quantity_in_stock": 345,
+      "unit_price": 300,
+      "expiry_date": "2027-08-25",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P107",
+      "name": "Eraser",
+      "category": "Books",
+      "quantity_in_stock": 456,
+      "unit_price": 100,
+      "expiry_date": "2028-09-30",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P108",
+      "name": "Ruler",
+      "category": "Books",
+      "quantity_in_stock": 234,
+      "unit_price": 200,
+      "expiry_date": "2027-11-15",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P109",
+      "name": "Stapler",
+      "category": "Books",
+      "quantity_in_stock": 156,
+      "unit_price": 900,
+      "expiry_date": "2026-10-20",
+      "supplier": "OfficeSupplies"
+    },
+    {
+      "product_id": "P110",
+      "name": "Scissors",
+      "category": "Books",
+      "quantity_in_stock": 189,
+      "unit_price": 600,
+      "expiry_date": "2026-12-25",
+      "supplier": "OfficeSupplies"
+    },
+    {
+      "product_id": "P111",
+      "name": "Glue",
+      "category": "Books",
+      "quantity_in_stock": 234,
+      "unit_price": 400,
+      "expiry_date": "2026-03-30",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P112",
+      "name": "Tape",
+      "category": "Books",
+      "quantity_in_stock": 345,
+      "unit_price": 300,
+      "expiry_date": "2026-05-15",
+      "supplier": "StationeryCo"
+    },
+    {
+      "product_id": "P113",
+      "name": "Paper",
+      "category": "Books",
+      "quantity_in_stock": 567,
+      "unit_price": 800,
+      "expiry_date": "2027-02-28",
+      "supplier": "PaperCo"
+    },
+    {
+      "product_id": "P114",
+      "name": "Envelope",
+      "category": "Books",
+      "quantity_in_stock": 456,
+      "unit_price": 200,
+      "expiry_date": "2027-04-15",
+      "supplier": "PaperCo"
+    },
+    {
+      "product_id": "P115",
+      "name": "Folder",
+      "category": "Books",
+      "quantity_in_stock": 234,
+      "unit_price": 400,
       "expiry_date": "2026-08-30",
       "supplier": "OfficeSupplies"
     },
     {
-      "product_id": "P012",
-      "name": "Desk",
-      "category": "Furniture",
-      "quantity_in_stock": 42,
-      "unit_price": 29900,
-      "expiry_date": "2026-09-15",
+      "product_id": "P116",
+      "name": "Binder",
+      "category": "Books",
+      "quantity_in_stock": 189,
+      "unit_price": 900,
+      "expiry_date": "2026-10-10",
       "supplier": "OfficeSupplies"
     },
     {
-      "product_id": "P013",
-      "name": "Lamp",
+      "product_id": "P117",
+      "name": "Calendar",
+      "category": "Books",
+      "quantity_in_stock": 156,
+      "unit_price": 1200,
+      "expiry_date": "2025-12-31",
+      "supplier": "OfficeSupplies"
+    },
+    {
+      "product_id": "P118",
+      "name": "Map",
+      "category": "Books",
+      "quantity_in_stock": 89,
+      "unit_price": 900,
+      "expiry_date": "2027-06-30",
+      "supplier": "BookStore"
+    },
+    {
+      "product_id": "P119",
+      "name": "Globe",
+      "category": "Books",
+      "quantity_in_stock": 45,
+      "unit_price": 4900,
+      "expiry_date": "2028-01-15",
+      "supplier": "BookStore"
+    },
+    {
+      "product_id": "P120",
+      "name": "Dictionary",
+      "category": "Books",
+      "quantity_in_stock": 78,
+      "unit_price": 2900,
+      "expiry_date": "2027-09-20",
+      "supplier": "BookStore"
+    },
+    {
+      "product_id": "P121",
+      "name": "Toy",
+      "category": "Toys",
+      "quantity_in_stock": 345,
+      "unit_price": 1900,
+      "expiry_date": "2027-12-31",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P122",
+      "name": "Doll",
+      "category": "Toys",
+      "quantity_in_stock": 234,
+      "unit_price": 2900,
+      "expiry_date": "2027-08-15",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P123",
+      "name": "Car",
+      "category": "Toys",
+      "quantity_in_stock": 456,
+      "unit_price": 900,
+      "expiry_date": "2027-06-30",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P124",
+      "name": "Ball",
+      "category": "Toys",
+      "quantity_in_stock": 567,
+      "unit_price": 500,
+      "expiry_date": "2027-04-15",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P125",
+      "name": "Puzzle",
+      "category": "Toys",
+      "quantity_in_stock": 189,
+      "unit_price": 1200,
+      "expiry_date": "2026-11-30",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P126",
+      "name": "Game",
+      "category": "Toys",
+      "quantity_in_stock": 156,
+      "unit_price": 3900,
+      "expiry_date": "2026-09-15",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P127",
+      "name": "Blocks",
+      "category": "Toys",
+      "quantity_in_stock": 234,
+      "unit_price": 1900,
+      "expiry_date": "2026-07-20",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P128",
+      "name": "Robot",
+      "category": "Toys",
+      "quantity_in_stock": 89,
+      "unit_price": 7900,
+      "expiry_date": "2026-05-25",
+      "supplier": "TechToys"
+    },
+    {
+      "product_id": "P129",
+      "name": "Drone",
+      "category": "Toys",
+      "quantity_in_stock": 67,
+      "unit_price": 12900,
+      "expiry_date": "2026-03-30",
+      "supplier": "TechToys"
+    },
+    {
+      "product_id": "P130",
+      "name": "Kite",
+      "category": "Toys",
+      "quantity_in_stock": 145,
+      "unit_price": 900,
+      "expiry_date": "2025-12-31",
+      "supplier": "OutdoorToys"
+    },
+    {
+      "product_id": "P131",
+      "name": "YoYo",
+      "category": "Toys",
+      "quantity_in_stock": 189,
+      "unit_price": 500,
+      "expiry_date": "2025-10-15",
+      "supplier": "ToyStore"
+    },
+    {
+      "product_id": "P132",
+      "name": "Frisbee",
+      "category": "Toys",
+      "quantity_in_stock": 156,
+      "unit_price": 600,
+      "expiry_date": "2025-08-20",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P133",
+      "name": "HulaHoop",
+      "category": "Toys",
+      "quantity_in_stock": 134,
+      "unit_price": 900,
+      "expiry_date": "2025-06-25",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P134",
+      "name": "SkippingRope",
+      "category": "Toys",
+      "quantity_in_stock": 167,
+      "unit_price": 400,
+      "expiry_date": "2025-04-30",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P135",
+      "name": "Boardgame",
+      "category": "Toys",
+      "quantity_in_stock": 89,
+      "unit_price": 2900,
+      "expiry_date": "2025-02-28",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P136",
+      "name": "Cards",
+      "category": "Toys",
+      "quantity_in_stock": 234,
+      "unit_price": 500,
+      "expiry_date": "2024-12-31",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P137",
+      "name": "Dice",
+      "category": "Toys",
+      "quantity_in_stock": 345,
+      "unit_price": 100,
+      "expiry_date": "2028-01-15",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P138",
+      "name": "Checkers",
+      "category": "Toys",
+      "quantity_in_stock": 156,
+      "unit_price": 1200,
+      "expiry_date": "2027-11-30",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P139",
+      "name": "Chess",
+      "category": "Toys",
+      "quantity_in_stock": 134,
+      "unit_price": 1900,
+      "expiry_date": "2027-09-15",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P140",
+      "name": "Dominos",
+      "category": "Toys",
+      "quantity_in_stock": 189,
+      "unit_price": 800,
+      "expiry_date": "2027-07-20",
+      "supplier": "GameCo"
+    },
+    {
+      "product_id": "P141",
+      "name": "Soap",
+      "category": "Beauty",
+      "quantity_in_stock": 456,
+      "unit_price": 300,
+      "expiry_date": "2026-08-30",
+      "supplier": "BeautyCo"
+    },
+    {
+      "product_id": "P142",
+      "name": "Shampoo",
+      "category": "Beauty",
+      "quantity_in_stock": 345,
+      "unit_price": 900,
+      "expiry_date": "2026-06-15",
+      "supplier": "BeautyCo"
+    },
+    {
+      "product_id": "P143",
+      "name": "Conditioner",
+      "category": "Beauty",
+      "quantity_in_stock": 234,
+      "unit_price": 900,
+      "expiry_date": "2026-04-10",
+      "supplier": "BeautyCo"
+    },
+    {
+      "product_id": "P144",
+      "name": "Lotion",
+      "category": "Beauty",
+      "quantity_in_stock": 189,
+      "unit_price": 1200,
+      "expiry_date": "2026-02-05",
+      "supplier": "BeautyCo"
+    },
+    {
+      "product_id": "P145",
+      "name": "Deodorant",
+      "category": "Beauty",
+      "quantity_in_stock": 267,
+      "unit_price": 600,
+      "expiry_date": "2025-12-31",
+      "supplier": "BeautyCo"
+    },
+    {
+      "product_id": "P146",
+      "name": "Perfume",
+      "category": "Beauty",
+      "quantity_in_stock": 156,
+      "unit_price": 4900,
+      "expiry_date": "2027-08-15",
+      "supplier": "FragranceCo"
+    },
+    {
+      "product_id": "P147",
+      "name": "Cologne",
+      "category": "Beauty",
+      "quantity_in_stock": 134,
+      "unit_price": 5900,
+      "expiry_date": "2027-06-30",
+      "supplier": "FragranceCo"
+    },
+    {
+      "product_id": "P148",
+      "name": "Makeup",
+      "category": "Beauty",
+      "quantity_in_stock": 189,
+      "unit_price": 1900,
+      "expiry_date": "2026-10-25",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P149",
+      "name": "Lipstick",
+      "category": "Beauty",
+      "quantity_in_stock": 234,
+      "unit_price": 900,
+      "expiry_date": "2026-08-20",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P150",
+      "name": "Mascara",
+      "category": "Beauty",
+      "quantity_in_stock": 167,
+      "unit_price": 800,
+      "expiry_date": "2026-06-15",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P151",
+      "name": "Foundation",
+      "category": "Beauty",
+      "quantity_in_stock": 134,
+      "unit_price": 1200,
+      "expiry_date": "2026-04-10",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P152",
+      "name": "Blush",
+      "category": "Beauty",
+      "quantity_in_stock": 156,
+      "unit_price": 700,
+      "expiry_date": "2026-02-05",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P153",
+      "name": "Eyeliner",
+      "category": "Beauty",
+      "quantity_in_stock": 189,
+      "unit_price": 600,
+      "expiry_date": "2025-12-31",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P154",
+      "name": "Eyeshadow",
+      "category": "Beauty",
+      "quantity_in_stock": 145,
+      "unit_price": 900,
+      "expiry_date": "2025-10-15",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P155",
+      "name": "Nailpolish",
+      "category": "Beauty",
+      "quantity_in_stock": 234,
+      "unit_price": 500,
+      "expiry_date": "2025-08-20",
+      "supplier": "CosmeticCo"
+    },
+    {
+      "product_id": "P156",
+      "name": "Razor",
+      "category": "Beauty",
+      "quantity_in_stock": 189,
+      "unit_price": 400,
+      "expiry_date": "2026-12-31",
+      "supplier": "GroomingCo"
+    },
+    {
+      "product_id": "P157",
+      "name": "Brush",
+      "category": "Beauty",
+      "quantity_in_stock": 156,
+      "unit_price": 600,
+      "expiry_date": "2026-10-15",
+      "supplier": "GroomingCo"
+    },
+    {
+      "product_id": "P158",
+      "name": "Comb",
+      "category": "Beauty",
+      "quantity_in_stock": 245,
+      "unit_price": 200,
+      "expiry_date": "2027-08-30",
+      "supplier": "GroomingCo"
+    },
+    {
+      "product_id": "P159",
+      "name": "Mirror",
+      "category": "Beauty",
+      "quantity_in_stock": 134,
+      "unit_price": 900,
+      "expiry_date": "2027-06-15",
+      "supplier": "HomeGoods"
+    },
+    {
+      "product_id": "P160",
+      "name": "Towel",
+      "category": "Beauty",
+      "quantity_in_stock": 345,
+      "unit_price": 800,
+      "expiry_date": "2027-04-10",
+      "supplier": "HomeComfort"
+    },
+    {
+      "product_id": "P161",
+      "name": "Basketball",
+      "category": "Sports",
+      "quantity_in_stock": 89,
+      "unit_price": 1900,
+      "expiry_date": "2026-09-15",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P162",
+      "name": "Football",
+      "category": "Sports",
+      "quantity_in_stock": 78,
+      "unit_price": 2900,
+      "expiry_date": "2026-07-20",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P163",
+      "name": "Soccerball",
+      "category": "Sports",
+      "quantity_in_stock": 67,
+      "unit_price": 1900,
+      "expiry_date": "2026-05-25",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P164",
+      "name": "Tennisball",
+      "category": "Sports",
+      "quantity_in_stock": 156,
+      "unit_price": 500,
+      "expiry_date": "2026-03-30",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P165",
+      "name": "Baseball",
+      "category": "Sports",
+      "quantity_in_stock": 134,
+      "unit_price": 600,
+      "expiry_date": "2026-01-15",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P166",
+      "name": "Golfball",
+      "category": "Sports",
+      "quantity_in_stock": 189,
+      "unit_price": 400,
+      "expiry_date": "2025-11-30",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P167",
+      "name": "Racket",
+      "category": "Sports",
+      "quantity_in_stock": 56,
+      "unit_price": 4900,
+      "expiry_date": "2025-09-15",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P168",
+      "name": "Bat",
+      "category": "Sports",
+      "quantity_in_stock": 45,
+      "unit_price": 3900,
+      "expiry_date": "2025-07-20",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P169",
+      "name": "Club",
+      "category": "Sports",
+      "quantity_in_stock": 67,
+      "unit_price": 8900,
+      "expiry_date": "2025-05-25",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P170",
+      "name": "Paddle",
+      "category": "Sports",
+      "quantity_in_stock": 34,
+      "unit_price": 2900,
+      "expiry_date": "2025-03-30",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P171",
+      "name": "Helmet",
+      "category": "Sports",
+      "quantity_in_stock": 89,
+      "unit_price": 4900,
+      "expiry_date": "2026-12-31",
+      "supplier": "SafetyCo"
+    },
+    {
+      "product_id": "P172",
+      "name": "Gloves",
+      "category": "Sports",
+      "quantity_in_stock": 156,
+      "unit_price": 1900,
+      "expiry_date": "2026-10-15",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P173",
+      "name": "Pads",
+      "category": "Sports",
+      "quantity_in_stock": 134,
+      "unit_price": 2900,
+      "expiry_date": "2026-08-20",
+      "supplier": "SafetyCo"
+    },
+    {
+      "product_id": "P174",
+      "name": "Net",
+      "category": "Sports",
+      "quantity_in_stock": 78,
+      "unit_price": 1900,
+      "expiry_date": "2026-06-25",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P175",
+      "name": "Goal",
+      "category": "Sports",
+      "quantity_in_stock": 45,
+      "unit_price": 7900,
+      "expiry_date": "2026-04-30",
+      "supplier": "SportStore"
+    },
+    {
+      "product_id": "P176",
+      "name": "Dumbbell",
+      "category": "Sports",
+      "quantity_in_stock": 156,
+      "unit_price": 2900,
+      "expiry_date": "2026-02-15",
+      "supplier": "FitnessCo"
+    },
+    {
+      "product_id": "P177",
+      "name": "Barbell",
+      "category": "Sports",
+      "quantity_in_stock": 67,
+      "unit_price": 5900,
+      "expiry_date": "2025-12-31",
+      "supplier": "FitnessCo"
+    },
+    {
+      "product_id": "P178",
+      "name": "Yogamat",
+      "category": "Sports",
+      "quantity_in_stock": 89,
+      "unit_price": 1900,
+      "expiry_date": "2025-10-15",
+      "supplier": "FitnessCo"
+    },
+    {
+      "product_id": "P179",
+      "name": "Treadmill",
+      "category": "Sports",
+      "quantity_in_stock": 23,
+      "unit_price": 89900,
+      "expiry_date": "2027-08-30",
+      "supplier": "FitnessCo"
+    },
+    {
+      "product_id": "P180",
+      "name": "Bike",
+      "category": "Sports",
+      "quantity_in_stock": 34,
+      "unit_price": 29900,
+      "expiry_date": "2027-06-15",
+      "supplier": "CycleCo"
+    },
+    {
+      "product_id": "P181",
+      "name": "Hammer",
+      "category": "Tools",
+      "quantity_in_stock": 156,
+      "unit_price": 1900,
+      "expiry_date": "2028-12-31",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P182",
+      "name": "Screwdriver",
+      "category": "Tools",
+      "quantity_in_stock": 234,
+      "unit_price": 900,
+      "expiry_date": "2028-10-15",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P183",
+      "name": "Wrench",
+      "category": "Tools",
+      "quantity_in_stock": 189,
+      "unit_price": 1200,
+      "expiry_date": "2028-08-20",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P184",
+      "name": "Pliers",
+      "category": "Tools",
+      "quantity_in_stock": 167,
+      "unit_price": 1100,
+      "expiry_date": "2028-06-25",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P185",
+      "name": "Saw",
+      "category": "Tools",
+      "quantity_in_stock": 89,
+      "unit_price": 3900,
+      "expiry_date": "2028-04-30",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P186",
+      "name": "Drill",
+      "category": "Tools",
+      "quantity_in_stock": 56,
+      "unit_price": 7900,
+      "expiry_date": "2028-02-15",
+      "supplier": "PowerTools"
+    },
+    {
+      "product_id": "P187",
+      "name": "Level",
+      "category": "Tools",
+      "quantity_in_stock": 134,
+      "unit_price": 900,
+      "expiry_date": "2027-12-31",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P188",
+      "name": "TapeMeasure",
+      "category": "Tools",
+      "quantity_in_stock": 189,
+      "unit_price": 600,
+      "expiry_date": "2027-10-15",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P189",
+      "name": "Ladder",
+      "category": "Tools",
+      "quantity_in_stock": 45,
+      "unit_price": 12900,
+      "expiry_date": "2027-08-20",
+      "supplier": "SafetyCo"
+    },
+    {
+      "product_id": "P190",
+      "name": "Paint",
+      "category": "Tools",
+      "quantity_in_stock": 156,
+      "unit_price": 1900,
+      "expiry_date": "2026-06-30",
+      "supplier": "PaintCo"
+    },
+    {
+      "product_id": "P191",
+      "name": "Brush",
+      "category": "Tools",
+      "quantity_in_stock": 234,
+      "unit_price": 500,
+      "expiry_date": "2026-04-15",
+      "supplier": "PaintCo"
+    },
+    {
+      "product_id": "P192",
+      "name": "Roller",
+      "category": "Tools",
+      "quantity_in_stock": 167,
+      "unit_price": 900,
+      "expiry_date": "2026-02-28",
+      "supplier": "PaintCo"
+    },
+    {
+      "product_id": "P193",
+      "name": "Bucket",
+      "category": "Tools",
+      "quantity_in_stock": 189,
+      "unit_price": 700,
+      "expiry_date": "2025-12-31",
+      "supplier": "ToolCo"
+    },
+    {
+      "product_id": "P194",
+      "name": "Sponge",
+      "category": "Tools",
+      "quantity_in_stock": 345,
+      "unit_price": 200,
+      "expiry_date": "2025-10-15",
+      "supplier": "CleaningCo"
+    },
+    {
+      "product_id": "P195",
+      "name": "Broom",
+      "category": "Tools",
+      "quantity_in_stock": 156,
+      "unit_price": 900,
+      "expiry_date": "2025-08-20",
+      "supplier": "CleaningCo"
+    },
+    {
+      "product_id": "P196",
+      "name": "Mop",
+      "category": "Tools",
+      "quantity_in_stock": 134,
+      "unit_price": 1200,
+      "expiry_date": "2025-06-25",
+      "supplier": "CleaningCo"
+    },
+    {
+      "product_id": "P197",
+      "name": "Vacuum",
+      "category": "Tools",
+      "quantity_in_stock": 45,
+      "unit_price": 19900,
+      "expiry_date": "2026-09-30",
+      "supplier": "CleaningCo"
+    },
+    {
+      "product_id": "P198",
+      "name": "Trashcan",
+      "category": "Tools",
+      "quantity_in_stock": 89,
+      "unit_price": 2900,
+      "expiry_date": "2027-05-15",
+      "supplier": "HomeGoods"
+    },
+    {
+      "product_id": "P199",
+      "name": "Basket",
+      "category": "Tools",
+      "quantity_in_stock": 156,
+      "unit_price": 1900,
+      "expiry_date": "2027-03-20",
+      "supplier": "HomeGoods"
+    },
+    {
+      "product_id": "P200",
+      "name": "Box",
+      "category": "Tools",
+      "quantity_in_stock": 345,
+      "unit_price": 500,
+      "expiry_date": "2027-01-25",
+      "supplier": "StorageCo"
+    },
+    
+    
+    {
+      "product_id": "P201",
+      "name": "GraphicCard",
+      "category": "Electronics",
+      "quantity_in_stock": 34,
+      "unit_price": 59900,
+      "expiry_date": "2026-08-15",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P202",
+      "name": "Motherboard",
+      "category": "Electronics",
+      "quantity_in_stock": 28,
+      "unit_price": 29900,
+      "expiry_date": "2026-09-20",
+      "supplier": "TechCorp"
+    },
+    {
+      "product_id": "P203",
+      "name": "Processor",
+      "category": "Electronics",
+      "quantity_in_stock": 45,
+      "unit_price": 49900,
+      "expiry_date": "2026-10-25",
+      "supplier": "TechCorp"
+    },
+    
+    {
+      "product_id": "P204",
+      "name": "Stool",
       "category": "Furniture",
       "quantity_in_stock": 89,
       "unit_price": 4900,
-      "expiry_date": "2026-07-20",
+      "expiry_date": "2026-12-30",
       "supplier": "HomeGoods"
     },
     {
-      "product_id": "P014",
-      "name": "Sofa",
+      "product_id": "P205",
+      "name": "Bench",
       "category": "Furniture",
-      "quantity_in_stock": 15,
-      "unit_price": 89900,
-      "expiry_date": "2026-10-30",
+      "quantity_in_stock": 56,
+      "unit_price": 12900,
+      "expiry_date": "2027-01-15",
       "supplier": "HomeFurnishings"
     },
+    
     {
-      "product_id": "P015",
-      "name": "Bed",
-      "category": "Furniture",
-      "quantity_in_stock": 28,
-      "unit_price": 79900,
-      "expiry_date": "2026-11-15",
-      "supplier": "HomeFurnishings"
+      "product_id": "P206",
+      "name": "Blazer",
+      "category": "Clothing",
+      "quantity_in_stock": 45,
+      "unit_price": 9900,
+      "expiry_date": "2026-11-20",
+      "supplier": "FashionHub"
     },
     {
-      "product_id": "P016",
-      "name": "Table",
-      "category": "Furniture",
-      "quantity_in_stock": 53,
-      "unit_price": 29900,
+      "product_id": "P207",
+      "name": "Cardigan",
+      "category": "Clothing",
+      "quantity_in_stock": 67,
+      "unit_price": 6900,
+      "expiry_date": "2026-10-15",
+      "supplier": "FashionHub"
+    },
+    
+    {
+      "product_id": "P208",
+      "name": "Flour",
+      "category": "Food",
+      "quantity_in_stock": 156,
+      "unit_price": 800,
+      "expiry_date": "2026-05-30",
+      "supplier": "GrainCo"
+    },
+    {
+      "product_id": "P209",
+      "name": "Yeast",
+      "category": "Food",
+      "quantity_in_stock": 89,
+      "unit_price": 300,
+      "expiry_date": "2025-09-15",
+      "supplier": "BakeryCo"
+    },
+    
+    {
+      "product_id": "P210",
+      "name": "VitaminC",
+      "category": "Health",
+      "quantity_in_stock": 156,
+      "unit_price": 1200,
+      "expiry_date": "2026-04-30",
+      "supplier": "HealthCo"
+    },
+    {
+      "product_id": "P211",
+      "name": "Painkiller",
+      "category": "Health",
+      "quantity_in_stock": 234,
+      "unit_price": 500,
+      "expiry_date": "2026-03-15",
+      "supplier": "PharmaCo"
+    },
+    
+    {
+      "product_id": "P212",
+      "name": "Tire",
+      "category": "Automotive",
+      "quantity_in_stock": 89,
+      "unit_price": 12900,
+      "expiry_date": "2027-08-20",
+      "supplier": "AutoParts"
+    },
+    {
+      "product_id": "P213",
+      "name": "Battery",
+      "category": "Automotive",
+      "quantity_in_stock": 56,
+      "unit_price": 19900,
+      "expiry_date": "2027-06-15",
+      "supplier": "AutoParts"
+    },
+    
+    {
+      "product_id": "P214",
+      "name": "Shovel",
+      "category": "Garden",
+      "quantity_in_stock": 78,
+      "unit_price": 2900,
+      "expiry_date": "2028-05-20",
+      "supplier": "GardenCo"
+    },
+    {
+      "product_id": "P215",
+      "name": "Rake",
+      "category": "Garden",
+      "quantity_in_stock": 67,
+      "unit_price": 1900,
+      "expiry_date": "2028-04-15",
+      "supplier": "GardenCo"
+    },
+    
+    {
+      "product_id": "P216",
+      "name": "Dogfood",
+      "category": "Pets",
+      "quantity_in_stock": 156,
+      "unit_price": 2900,
+      "expiry_date": "2026-07-30",
+      "supplier": "PetCo"
+    },
+    {
+      "product_id": "P217",
+      "name": "Catfood",
+      "category": "Pets",
+      "quantity_in_stock": 189,
+      "unit_price": 2400,
       "expiry_date": "2026-06-25",
+      "supplier": "PetCo"
+    },
+    
+    {
+      "product_id": "P218",
+      "name": "Diapers",
+      "category": "Baby",
+      "quantity_in_stock": 234,
+      "unit_price": 2900,
+      "expiry_date": "2026-09-15",
+      "supplier": "BabyCo"
+    },
+    {
+      "product_id": "P219",
+      "name": "Bottle",
+      "category": "Baby",
+      "quantity_in_stock": 156,
+      "unit_price": 900,
+      "expiry_date": "2026-08-10",
+      "supplier": "BabyCo"
+    },
+    
+    {
+      "product_id": "P220",
+      "name": "Whiteboard",
+      "category": "Office",
+      "quantity_in_stock": 45,
+      "unit_price": 12900,
+      "expiry_date": "2027-10-20",
       "supplier": "OfficeSupplies"
     },
     {
-      "product_id": "P017",
-      "name": "Shelf",
-      "category": "Furniture",
-      "quantity_in_stock": 76,
-      "unit_price": 8900,
-      "expiry_date": "2026-05-30",
-      "supplier": "HomeGoods"
-    },
-    {
-      "product_id": "P018",
-      "name": "Cabinet",
-      "category": "Furniture",
-      "quantity_in_stock": 37,
-      "unit_price": 39900,
-      "expiry_date": "2026-08-10",
-      "supplier": "HomeFurnishings"
-    },
-    {
-      "product_id": "P019",
-      "name": "Mirror",
-      "category": "Furniture",
-      "quantity_in_stock": 64,
-      "unit_price": 7900,
-      "expiry_date": "2026-04-15",
-      "supplier": "HomeGoods"
-    },
-    {
-      "product_id": "P020",
-      "name": "Carpet",
-      "category": "Furniture",
-      "quantity_in_stock": 49,
-      "unit_price": 19900,
-      "expiry_date": "2026-03-30",
-      "supplier": "HomeFurnishings"
-    }]
+      "product_id": "P221",
+      "name": "Marker",
+      "category": "Office",
+      "quantity_in_stock": 189,
+      "unit_price": 300,
+      "expiry_date": "2027-08-15",
+      "supplier": "StationeryCo"
+    }
+    
+    
+  ]
 }
