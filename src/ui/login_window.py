@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from models.worker import Worker
+from models.Worker import Worker
 
 class LoginWindow:
     def __init__(self,parent,on_success_callback):

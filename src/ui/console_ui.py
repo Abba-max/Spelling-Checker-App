@@ -1,4 +1,4 @@
-from models.worker import Worker
+from models.Worker import Worker
 from models.receipt import Receipt
 from utilities.inventory_manager import InventoryManager
 

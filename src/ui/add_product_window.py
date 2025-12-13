@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-from models.product import Product
+from models.Product import Product
 from datetime import datetime
 
 class AddProductWindow:
