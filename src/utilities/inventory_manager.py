@@ -1,7 +1,7 @@
 import json
 from datetime import datetime
 from typing import List, Optional
-from models.Product import Product
+from models.product import Product
 from models.receipt import Receipt
 from utilities.bloom_filter import BloomFilter
 from utilities.trie import Trie
