@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 from models.receipt import Receipt
+from ui.receipt_viewer import ReceiptViewer
+import os, json
 
 class SaleWindow:
     def __init__(self, parent, inventory, worker, update_callback):
@@ -282,6 +284,24 @@ class SaleWindow:
             # Save inventory
             self.inventory.save_products()
             
+            # Open the receipt viewer for the saved receipt (including items and total)
+            try:
+                with open(filename, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                rid = os.path.splitext(os.path.basename(filename))[0]
+                receipt_dict = {
+                    'id': rid,
+                    'date': data.get('date', receipt.date),
+                    'worker': data.get('worker', receipt.worker_name),
+                    'customer': data.get('customer', receipt.customer_name),
+                    'items': data.get('items', []),
+                    'total': data.get('total', receipt.total),
+                    'company': data.get('company', {})
+                }
+                ReceiptViewer(self.window, receipt_dict)
+            except Exception:
+                # If viewer fails, continue silently — receipt file still saved
+                pass
             # Show success message
             messagebox.showinfo(
                 "Success",

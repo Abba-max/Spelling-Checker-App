@@ -1,0 +1,22 @@
+{
+  "date": "2025-12-13 15:31:35",
+  "customer": "Marc",
+  "worker": "Worker1",
+  "items": [
+    {
+      "product_id": "P001",
+      "name": "Laptop",
+      "quantity": 2,
+      "unit_price": 10000.0,
+      "total": 20000.0
+    },
+    {
+      "product_id": "P013",
+      "name": "Lamp",
+      "quantity": 5,
+      "unit_price": 4900,
+      "total": 24500
+    }
+  ],
+  "total": 44500.0
+}

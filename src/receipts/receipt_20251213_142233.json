@@ -1,0 +1,15 @@
+{
+  "date": "2025-12-13 14:22:33",
+  "customer": "Customer1",
+  "worker": "Worker1",
+  "items": [
+    {
+      "product_id": "P001",
+      "name": "Laptop",
+      "quantity": 4,
+      "unit_price": 10000.0,
+      "total": 40000.0
+    }
+  ],
+  "total": 40000.0
+}

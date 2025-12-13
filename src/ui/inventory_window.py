@@ -319,12 +319,17 @@ class EditProductDialog:
         except Exception as e:
             messagebox.showerror("Error", f"Failed to update product: {e}")
             
-    # def delete_product(self):
-    #     selection = self.tree.selection()
-    #     if not selection:
-    #       return
-    #     product_id = self.tree.item(selection[0])['values'][0]
-    #     if messagebox.askyesno("Confirm", "Delete this product?"):
-    #        if self.inventory.delete_product(product_id):
-    #          self.load_products()
-    #          messagebox.showinfo("Success", "Product deleted")
+    def delete_product(self):
+        selection = self.tree.selection()
+        if not selection:
+          return
+        product_id = self.tree.item(selection[0])['values'][0]
+        if messagebox.askyesno("Confirm", "Delete this product?"):
+           if self.inventory.delete_product(product_id):
+             self.load_products()
+             messagebox.showinfo("Success", "Product deleted")
+             ttk.Button(
+                        buttons_frame,
+                        text="Delete Selected",
+                        command=self.delete_product
+                    ).pack(side=tk.LEFT, padx=5)

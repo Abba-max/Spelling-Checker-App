@@ -6,7 +6,7 @@ class LoginWindow:
     def __init__(self,parent,on_success_callback):
         self.window = tk.Toplevel(parent)
         self.window.title("Login - Inventory Management System")
-        self.window.geometry("400x300")
+        self.window.geometry("900x600")
         self.window.resizable(False, False)
         self.on_success = on_success_callback
         # self.center_window() # Place the window at the center of the screen
@@ -18,8 +18,8 @@ class LoginWindow:
         self.window.update_idletasks()
         width = self.window.winfo_width()
         height = self.window.winfo_height()
-        x = (self.window.winfo_screenwidth() // 2) - (width // 2)
-        y = (self.window.winfo_screenheight() // 2) - (height // 2)
+        x = (self.window.winfo_screenwidth() // 2) - (500 // 2)
+        y = (self.window.winfo_screenheight() // 2) - (500 // 2)
         self.window.geometry(f'{width}x{height}+{x}+{y}')   
     
     def create_widgets(self):

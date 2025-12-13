@@ -2,8 +2,13 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 from ui.sale_window import SaleWindow
 from ui.inventory_window import InventoryWindow
+from ui.login_window import LoginWindow
 from ui.add_product_window import AddProductWindow
 from datetime import datetime
+import json
+import os
+import tkinter.filedialog as fd
+from ui.receipt_viewer import ReceiptViewer
 
 class MainWindow:
     def __init__(self, root, inventory, worker):
@@ -46,6 +51,10 @@ class MainWindow:
         help_menu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Help", menu=help_menu)
         help_menu.add_command(label="About", command=self.show_about)
+        
+        logout_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="Logout", menu=logout_menu)
+        logout_menu.add_command(label="Close Session", command=self.logout)
           
     def create_widgets(self):
         main_frame = ttk.Frame(self.root, padding="10")
@@ -166,7 +175,29 @@ class MainWindow:
             messagebox.showerror("Error", "Failed to save inventory")
     
     def view_receipts(self):
-        messagebox.showinfo("View Receipts", "This feature will display all saved receipts")
+        receipts_dir = os.path.join(os.getcwd(), "receipts")
+        initial = receipts_dir if os.path.isdir(receipts_dir) else os.getcwd()
+        path = fd.askopenfilename(title="Open Receipt", initialdir=initial,
+                                  filetypes=[("JSON files", "*.json")])
+        if not path:
+            return
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            rid = os.path.splitext(os.path.basename(path))[0]
+            receipt = {
+                "id": rid,
+                "date": data.get("date", ""),
+                "worker": data.get("worker", data.get("served_by", "")),
+                "customer": data.get("customer", data.get("customer_name", "")),
+                "items": data.get("items", []),
+                "total": data.get("total", 0),
+                "company": data.get("company", {})
+            }
+            ReceiptViewer(self.root, receipt)
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to open receipt: {e}")
     
     def show_about(self):
         about_text = """
@@ -182,3 +213,28 @@ Features:
 Developed for efficient inventory management
         """
         messagebox.showinfo("About", about_text)
+        
+    def logout(self):
+        try:
+            self.root.withdraw()
+            try:
+                self.root.config(menu=None)
+            except Exception:
+                pass
+            for w in list(self.root.winfo_children()):
+                try:
+                    w.destroy()
+                except Exception:
+                    pass
+            def _on_login_success(new_worker):
+                self.worker = new_worker
+                self.root.deiconify()
+                try:
+                    self.__init__(self.root, self.inventory, self.worker)
+                except Exception as e:
+                    messagebox.showerror("Error", f"Failed to initialize main window: {e}")
+
+            LoginWindow(self.root, _on_login_success)
+        except Exception as e:
+            messagebox.showerror("Error", f"Logout failed: {e}")
+        
